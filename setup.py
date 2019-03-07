@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
 	name='tsdeg',
 	version='0.1',
-	scripts=['tsdeg.py'],
+	# scripts=['tsdeg'],
 	author="Deepak Kumar",
 	author_email="matthew.moydevitry@eawag.ch",
 	description="A tool to degrade time series data",

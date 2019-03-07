@@ -1,5 +1,4 @@
 import pandas as pd
-import os
 from functions import random_iid
 
 
@@ -31,7 +30,7 @@ def noisify(data, signal_col, noise_type, intensity, noisy_signal_col='degraded'
         raise Exception('noise type not recognized')
 
     # Add noise to signal, scaling to signal size
-    df_copy[noisy_signal_col] = df_copy[signal_col] + df_copy[signal_col]*noise
+    df_copy[noisy_signal_col] = df_copy[signal_col] + df_copy[signal_col] * noise
 
     # Measure correlation
     correlation = df_copy.corr(method='spearman')
