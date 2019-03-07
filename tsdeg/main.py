@@ -5,6 +5,7 @@ from functions import random_iid
 
 def noisify(data, signal_col, noise_type, intensity, noisy_signal_col='degraded', normalize=False):
     """Adds noise to signal
+    :param noisy_signal_col: name of column that should be created to save noisy data in
     :param data: Pandas Dataframe
     :param signal_col: name of column in which noise should be added
     :param noise_type: "normal"
