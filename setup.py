@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
 setuptools.setup(
 	name='tsdeg',
 	version='0.1',
-	# scripts=['tsdeg'],
-	author="Deepak Kumar",
+	# scripts=['tsdeg'],  # this leads to a permissions error
+	author="Matthew Moy de Vitry",
 	author_email="matthew.moydevitry@eawag.ch",
 	description="A tool to degrade time series data",
 	long_description=long_description,
